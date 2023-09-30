@@ -221,67 +221,36 @@ __ALIGN_BEGIN static uint8_t USBD_HID_DeviceQualifierDesc[USB_LEN_DEV_QUALIFIER_
 __ALIGN_BEGIN static uint8_t HID_MOUSE_ReportDesc[HID_MOUSE_REPORT_DESC_SIZE] __ALIGN_END =
 {
         0x05,0x01,//使用情况页(通用桌面)
-
         0x09,0x06,//用法(通用设备控件)
-
         0xA1,0x01,//收集(申请)
-
         0x05,0x07,//用法页(键盘/键盘)
-
         0x19,0xE0,//最小使用量(按钮224)
-
         0x29,0xE7,//最大使用量(按钮231)
-
         0x15,0x00,//逻辑最小值(0)
-
         0x25,0x01,//逻辑最大值(1)
-
         0x75,0x01,//Report Size (1)
-
         0x95,0x08,//Report Count (8)
-
         0x81,0x02,//Input (Data，Var，Abs，NWrp，Lin，Pref，NNul，Bit)
-
         0x95,0x01,//Report Count (1)
-
         0x75,0x08,//Report Size (8)
-
         0x81,0x01,//Input (Data，Var，Abs，NWrp，Lin，Pref，NNul，Bit)
-
         0x95,0x05,//Report Count (5)
-
         0x75,0x01,//Report Size (1)
-
         0x05,0x08,//使用页面(LED)
-
         0x19,0x01,//使用最少(按钮1)
-
         0x29,0x05,//最大用量(按钮5)
-
         0x91,0x02,//输出(Data，Var，Abs，NWrp，Lin，Pref，NNul，NVol，Bit)
-
         0x95,0x01,//Report Count (1)
-
         0x75,0x03,//Report Size (3)
-
         0x91,0x01,//输出(Data，Var，Abs，NWrp，Lin，Pref，NNul，NVol，Bit)
-
         0x95,0x06,//Report Count (6)
-
         0x75,0x08,//Report Size (8)
-
         0x15,0x00,//逻辑最小值(0)
-
         0x25,0x65,//逻辑最大值(255)
-
         0x05,0x07,//用法页(键盘/键盘)
-
         0x19,0x00,//最小使用量(按钮0)
-
         0x29,0x65,//最大使用量(按钮255)
-
         0x81,0x00,//Input (Data，Var，Abs，NWrp，Lin，Pref，NNul，Bit)
-
         0xC0//收集完毕
 };
 

@@ -2,6 +2,10 @@
 
 简单实现了USB-HID Keyboard的功能
 
+1. **注意:要在usb_device.h文件中include进usb_hid.h文件**     
+2. **在主文件(或者usb_device)中extern出USB的结构体**   
+**extern USBD_HandleTypeDef hUsbDeviceFS;**
+
 ## **与USB-HID鼠标不同的地方**
 
 1. CubeMX生成的USB-HID文件默认是配置USB鼠标的,需要修改如下文件:

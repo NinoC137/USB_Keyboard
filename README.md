@@ -39,3 +39,6 @@
    > #define HID_MOUSE_REPORT_DESC_SIZE                 63U  //默认74U,改为63,keyboard描述符的字节共63    
    > 
    > #define HID_EPIN_SIZE                              0x08U    //8字节长度,键盘报文每次发送8byte数组
+
+2. 发送报文需要一定时间来发送,建议使用阻塞式的while循环来等待其发送完毕
+3. 报文具有自己的数据格式,可参考文件夹内的pdf官方文件
